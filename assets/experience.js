@@ -75,6 +75,11 @@
       var r=canvas.getBoundingClientRect();target.x=((e.clientX-r.left)/r.width-.5)*2;target.y=((e.clientY-r.top)/r.height-.5)*2;
     });
     canvas.parentElement.addEventListener('pointerleave',function(){target.x=0;target.y=0});
+    window.addEventListener('scroll',function(){
+      var y=Math.min(window.scrollY,900);
+      group.position.z=-y*.00045;
+      group.rotation.z=y*.00008;
+    },{passive:true});
 
     function tick(){
       requestAnimationFrame(tick);
@@ -87,4 +92,15 @@
     }
     tick();
   }catch(err){console.warn('WebAura 3D scene unavailable',err)}
+})();
+/* Micro-interactions */
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  document.querySelectorAll('.btn').forEach(function(btn){
+    btn.addEventListener('pointermove',function(e){
+      var r=btn.getBoundingClientRect(),x=(e.clientX-r.left-r.width/2)*.08,y=(e.clientY-r.top-r.height/2)*.08;
+      btn.style.transform='translate('+x+'px,'+y+'px)';
+    });
+    btn.addEventListener('pointerleave',function(){btn.style.transform=''});
+  });
 })();
