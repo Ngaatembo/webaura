@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#07070a">
+<meta name="theme-color" content="#3d8bff">
 <title>WebAura — Digital experiences that make business work better</title>
 <meta name="description" content="WebAura designs and builds premium websites, custom platforms and digital systems for businesses in Zimbabwe.">
 <link rel="canonical" href="https://nwt-dev-website.ngaatendwew.workers.dev/">
@@ -12,156 +12,157 @@
 <meta property="og:description" content="Premium websites, custom platforms and digital systems for businesses in Zimbabwe.">
 <meta property="og:url" content="https://nwt-dev-website.ngaatendwew.workers.dev/">
 <meta property="og:site_name" content="WebAura">
-<link rel="icon" href="/assets/favicon-48.png" type="image/png">
+<meta property="og:image" content="https://nwt-dev-website.ngaatendwew.workers.dev/og-image.png">
+<link rel="icon" href="/favicon-48.png" type="image/png">
 <link rel="apple-touch-icon" href="/webaura-icon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<link rel="preload" href="/assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/home.css">
+<script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"WebAura","url":"https://nwt-dev-website.ngaatendwew.workers.dev/","description":"Websites and digital solutions for businesses in Zimbabwe.","email":"ngaatendwew@gmail.com","telephone":"+263780511822","areaServed":"Zimbabwe","address":{"@type":"PostalAddress","addressLocality":"Marondera","addressCountry":"ZW"}}</script>
 </head>
-<body class="is-loading">
+<body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="site-bg"></div><div class="grid-lines"></div>
 
-<header class="nav">
-  <div class="wrap nav-inner">
-    <a class="brand" href="#top" aria-label="WebAura home"><img src="/webaura-mark-96.png" alt=""><span>Web<em>Aura</em></span></a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#services">Capabilities</a><a href="#work">Work</a><a href="#process">Process</a><a href="#about">About</a><a href="#contact">Contact</a>
-    </nav>
-    <a class="btn btn-primary" href="#contact">Start a project ↗</a>
-    <button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
-  </div>
+<header class="site-header" data-ink="dark">
+  <a class="brand" href="#top" aria-label="WebAura home"><img src="/webaura-mark-96.png" alt="" width="170" height="96"><span>WebAura</span></a>
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a href="#services">Capabilities</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-action" href="#contact">Start a project</a>
+  </nav>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
 </header>
 
 <main id="main">
-<section id="top" class="hero">
-  <div class="wrap hero-layout">
-    <div class="reveal">
-      <div class="eyebrow"><i></i> Independent digital studio · Zimbabwe</div>
-      <h1>Make your business <span>impossible to ignore.</span></h1>
-      <p class="hero-copy">WebAura designs digital experiences and business systems around how your company actually works — not around a template.</p>
-      <div class="hero-actions"><a class="btn btn-primary" href="#contact">Tell us what you're building ↗</a><a class="btn btn-ghost" href="#work">Explore our work</a></div>
-      <div class="hero-meta">
-        <div>01<strong>Web experiences</strong></div><div>02<strong>Business systems</strong></div><div>03<strong>Built for growth</strong></div>
+
+<section id="top" class="hero chapter" data-ink="dark" aria-labelledby="hero-title">
+  <div class="hero-field-top"></div>
+  <div class="hero-field-bottom"></div>
+  <div class="hero-title display" aria-hidden="true">
+    <span class="copy-sizer">Impossible<br>to ignore.</span>
+    <span class="copy copy-top">Impossible<br>to ignore.</span>
+    <span class="copy copy-bottom">Impossible<br>to ignore.</span>
+  </div>
+  <h1 id="hero-title" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">Make your business impossible to ignore.</h1>
+  <div class="hero-foot">
+    <p class="rise" style="--i:3">WebAura designs and builds websites and business systems for companies in Zimbabwe.</p>
+    <a class="btn btn-dark rise" style="--i:4" href="#contact">Tell us what you're building <span class="arrow" aria-hidden="true">↗</span></a>
+  </div>
+</section>
+
+<section id="about" class="section chapter on-black" data-ink="light">
+  <div class="grid-12 intro-top">
+    <h2 class="rise" style="--i:0">Not a template.</h2>
+    <p class="rise" style="--i:1">Your website should explain the business, build trust, create enquiries and support the way your team works. That is what we design.</p>
+  </div>
+  <div class="facts">
+    <div class="fact rise" style="--i:0"><strong>3 live sites</strong><span>VenMax Car Rental, Cultures Resort and Con Z Connect.</span></div>
+    <div class="fact rise" style="--i:1"><strong>Marondera</strong><span>An independent studio in Zimbabwe, working with local businesses.</span></div>
+    <div class="fact rise" style="--i:2"><strong>Free demo</strong><span>A personalised concept, so you see the direction before you commit.</span></div>
+  </div>
+</section>
+
+<section id="services" class="section chapter on-surface" data-ink="light" aria-labelledby="caps-head">
+  <div class="caps">
+    <p class="cap-head rise" id="caps-head">What we build</p>
+    <div class="caps-list">
+      <a class="cap rise" style="--i:1" href="/services/web-design"><h3>Websites</h3><p>Premium, mobile-first websites built around your brand, your audience and the way people enquire.</p></a>
+      <a class="cap rise" style="--i:2" href="/services/digital-solutions"><h3>Web applications</h3><p>Dashboards, portals, marketplaces, booking flows and business tools built for your workflow.</p></a>
+      <a class="cap rise" style="--i:3" href="/services/website-redesign"><h3>Redesigns</h3><p>An outdated or confusing online presence turned into something clearer, faster and more credible.</p></a>
+      <a class="cap rise" style="--i:4" href="/services/website-maintenance"><h3>Ongoing support</h3><p>Updates, content changes and technical support after launch, without disappearing.</p></a>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="section work chapter on-paper" data-ink="dark" aria-labelledby="work-label">
+  <div class="grid-12 work-grid">
+    <h2 class="work-label rise" id="work-label">Selected work</h2>
+    <p class="work-statement rise" style="--i:1"><a href="venmax-case-study.html"><span class="name">VenMax Car Rental</span><span class="logo-chip"><img src="/assets/venmax-logo.png" alt="" width="245" height="300" loading="lazy"></span></a>, <a href="https://culturesresort.co.zw"><span class="name">Cultures Resort</span><span class="logo-chip"><img src="/assets/cultures-resort-logo.png" alt="" width="300" height="181" loading="lazy"></span></a>, <a href="https://conz.co.zw"><span class="name">Con Z Connect</span><span class="logo-chip"><img src="/assets/conz-logo.png" alt="" width="300" height="293" loading="lazy"></span></a>, The REAL Events Company and Tembo Technologies.</p>
+    <p class="work-note rise" style="--i:2">Each one is built around that business's real problem. Read the case studies: <a href="venmax-case-study.html">VenMax Car Rental</a> and <a href="cultures-case-study.html">Cultures Resort</a>.</p>
+  </div>
+</section>
+
+<section id="process" class="section process chapter on-blue" data-ink="blue" aria-labelledby="process-head">
+  <div class="grid-12 process-grid">
+    <div class="process-copy">
+      <h2 id="process-head" class="rise">How a project runs</h2>
+      <p class="rise" style="--i:1">We start with the business problem, then design, demonstrate, build and support.</p>
+    </div>
+    <div class="slip rise" style="--i:2">
+      <h3>First</h3>
+      <ol>
+        <li><span class="what">Discover</span><span class="dots" aria-hidden="true"></span><span class="out">Your goals</span></li>
+        <li><span class="what">Diagnose</span><span class="dots" aria-hidden="true"></span><span class="out">The real problem</span></li>
+      </ol>
+      <h3>Then</h3>
+      <ol>
+        <li><span class="what">Design</span><span class="dots" aria-hidden="true"></span><span class="out">The plan</span></li>
+        <li><span class="what">Demonstrate</span><span class="dots" aria-hidden="true"></span><span class="out">Your concept</span></li>
+      </ol>
+      <h3>Last</h3>
+      <ol>
+        <li><span class="what">Deliver</span><span class="dots" aria-hidden="true"></span><span class="out">A live site</span></li>
+      </ol>
+      <div class="result"><span>You hold</span><span>A live site, and support after launch</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="close chapter on-paper" data-ink="dark" aria-labelledby="close-head">
+  <h2 id="close-head" class="display rise">Build an asset.</h2>
+  <div class="close-foot">
+    <p class="rise" style="--i:1">Your online presence should keep working when you are not on your phone.</p>
+    <a class="btn rise" style="--i:2" href="#contact">Request a free demo <span class="arrow" aria-hidden="true">↗</span></a>
+  </div>
+</section>
+
+<section id="contact" class="contact chapter on-black" data-ink="light" aria-label="Contact">
+  <ul class="rows">
+    <li><div class="line">WebAura</div></li>
+    <li><div class="line">Marondera, Zimbabwe</div></li>
+    <li><a class="line" href="mailto:ngaatendwew@gmail.com" data-track="contact_email">ngaatendwew@gmail.com</a></li>
+    <li><a class="line" href="tel:+263780511822" data-track="contact_phone">+263 78 051 1822</a></li>
+    <li><a class="line greet" href="https://wa.me/263780511822" data-track="contact_whatsapp">Hello on WhatsApp <span class="round" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M6 18 18 6M8 6h10v10"/></svg></span></a></li></ul>
+  <div class="form-wrap">
+    <div class="grid-12 form-grid">
+      <div class="form-intro">
+        <h2 class="rise">What needs to work better?</h2>
+        <p class="rise" style="--i:1">Give us the business problem, the current situation and what you want to achieve. We will work out the right digital solution with you.</p>
       </div>
-    </div>
-    <div class="hero-stage reveal">
-      <div class="stage-orbit"></div>
-      <div class="stage-ui stage-ui-top"><span>WEB AURA / 001</span><span>3D EXPERIENCE</span></div>
-      <canvas id="hero-canvas" aria-label="Interactive WebAura 3D visual"></canvas>
-      <div class="stage-ui stage-ui-bottom"><span>Move to explore</span><span>Scroll ↓</span></div>
-    </div>
-  </div>
-  <div class="scroll-cue">Scroll to explore ↓</div>
-</section>
-
-<div class="marquee" aria-hidden="true"><div class="marquee-track">
-  <span><b>Web design</b> · custom development ·</span><span>digital systems · <b>business automation</b> ·</span><span>marketplaces · <b>conversion</b> ·</span><span>WebAura · Zimbabwe · <b>Web design</b> ·</span><span>custom development · digital systems · <b>business automation</b> ·</span><span>marketplaces · <b>conversion</b> · WebAura · Zimbabwe ·</span>
-</div></div>
-
-<section id="about">
-  <div class="wrap statement reveal">
-    <div><div class="section-kicker">01 / The point</div></div>
-    <div class="statement-copy">Your website should do more than <span class="dim">sit online.</span><br><br><strong>It should explain the business, build trust, create enquiries and support the way your team works.</strong><br><br><span class="dim">That is what we design.</span></div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="wrap">
-    <div class="section-kicker reveal">02 / Capabilities</div>
-    <h2 class="section-title reveal">Digital work with <span>business logic behind it.</span></h2>
-    <p class="section-intro reveal">From a sharp company website to a full platform, we start with the problem and design the technology around the outcome.</p>
-    <div class="service-grid reveal">
-      <a class="service" href="/services/web-design"><span class="service-number">01</span><div class="service-glow"></div><h3>Websites &amp; digital experiences</h3><p>Premium, mobile-first websites designed around your brand, audience and conversion path.</p><span class="service-arrow">↗</span></a>
-      <a class="service" href="/services/digital-solutions"><span class="service-number">02</span><div class="service-glow"></div><h3>Custom web applications</h3><p>Dashboards, portals, marketplaces, booking flows and business tools built for your workflow.</p><span class="service-arrow">↗</span></a>
-      <a class="service" href="/services/website-redesign"><span class="service-number">03</span><div class="service-glow"></div><h3>Redesign &amp; transformation</h3><p>Turn an outdated or confusing online presence into something clearer, faster and more credible.</p><span class="service-arrow">↗</span></a>
-      <a class="service" href="/services/website-maintenance"><span class="service-number">04</span><div class="service-glow"></div><h3>Ongoing support</h3><p>Updates, content changes, technical support and improvements after launch — without disappearing.</p><span class="service-arrow">↗</span></a>
-    </div>
-  </div>
-</section>
-
-<section id="work">
-  <div class="wrap">
-    <div class="section-kicker reveal">03 / Selected work</div>
-    <h2 class="section-title reveal">Real businesses.<br><span>Real problems.</span></h2>
-    <div class="feature reveal">
-      <div class="feature-art"></div>
-      <div class="feature-copy"><div class="feature-kicker">Live client project</div><h3>VenMax<br>Car Rental</h3><p>A digital experience built around fleet discovery, pricing, diaspora customers and a clear route to enquiry.</p><a class="btn btn-ghost" style="width:max-content;margin-top:25px" href="venmax-case-study.html">View case study ↗</a></div>
-    </div>
-    <div class="work-list reveal">
-      <a class="work-card" href="https://culturesresort.co.zw"><div class="work-no">02</div><div class="work-client"><img src="/assets/cultures-resort-logo.png" alt=""><div class="work-name">Cultures Resort</div><div class="work-desc">Hospitality website and online ordering experience for a traditional African restaurant in Harare.</div></div><div class="work-tag">Hospitality<br><span class="work-arrow">↗</span></div></a>
-      <a class="work-card" href="https://conz.co.zw"><div class="work-no">03</div><div class="work-client"><img src="/assets/conz-logo.png" alt=""><div class="work-name">Con Z Connect</div><div class="work-desc">A marketplace concept connecting building-material transport demand with tipper truck operators.</div></div><div class="work-tag">Marketplace<br><span class="work-arrow">↗</span></div></a>
-      <a class="work-card" href="#contact"><div class="work-no">04</div><div><div class="work-name">The REAL Events Company</div><div class="work-desc">A professional digital presence for an events business with services, packages and enquiry paths.</div></div><div class="work-tag">Events<br><span class="work-arrow">→</span></div></a>
-      <a class="work-card" href="#contact"><div class="work-no">05</div><div><div class="work-name">Tembo Technologies</div><div class="work-desc">Corporate web concept presenting capabilities and services for a serious B2B audience.</div></div><div class="work-tag">Corporate<br><span class="work-arrow">→</span></div></a>
-    </div>
-  </div>
-</section>
-
-<section id="process">
-  <div class="wrap">
-    <div class="section-kicker reveal">04 / How we work</div>
-    <h2 class="section-title reveal">We start with the <span>business problem.</span></h2>
-    <p class="section-intro reveal">A better process produces better digital work. We discover first, then design, demonstrate, build and support.</p>
-    <div class="process reveal">
-      <div class="step"><div class="step-no">01</div><h3>Discover</h3><p>Understand the business, customers, workflow and goals.</p></div>
-      <div class="step"><div class="step-no">02</div><h3>Diagnose</h3><p>Find the operational or commercial problem worth solving.</p></div>
-      <div class="step"><div class="step-no">03</div><h3>Design</h3><p>Shape the experience, architecture and solution before build.</p></div>
-      <div class="step"><div class="step-no">04</div><h3>Demonstrate</h3><p>Show a personalised concept so you can see the direction.</p></div>
-      <div class="step"><div class="step-no">05</div><h3>Deliver</h3><p>Build, launch and keep improving the system with you.</p></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="cta reveal">
-      <div class="section-kicker">05 / The WebAura promise</div>
-      <h2>Don't buy a website.<br><span>Build an asset.</span></h2>
-      <p>Your online presence should keep working when you are not on your phone — bringing clarity to customers and structure to the business behind it.</p>
-      <div class="cta-actions"><a class="btn btn-primary" href="#contact">Request a free demo ↗</a><a class="btn btn-ghost" href="https://wa.me/263780511822">Talk on WhatsApp</a></div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="wrap contact-grid">
-    <div class="contact-copy reveal">
-      <div class="section-kicker">06 / Start a conversation</div>
-      <h2 class="section-title">Tell us what needs to work better.</h2>
-      <p>No generic pitch. Give us the business problem, the current situation and what you want to achieve. We'll work out the right digital solution with you.</p>
-      <div class="contact-direct">Direct · <a href="mailto:ngaatendwew@gmail.com">ngaatendwew@gmail.com</a><br>WhatsApp · <a href="https://wa.me/263780511822">+263 78 051 1822</a><br>Marondera, Zimbabwe</div>
-    </div>
-    <div class="reveal">
-      <form class="form" id="nwtContactForm" data-lead-form="contact" data-subject="New WebAura project enquiry from {business}">
-        <label>Name *<input type="text" name="name" placeholder="Your name" required></label>
-        <label>Email *<input type="email" name="email" placeholder="you@business.com" required></label>
-        <label>Business name *<input type="text" name="business" placeholder="Your business" required></label>
-        <label>What are you trying to build or improve? *<textarea name="details" placeholder="Tell us about the business problem, current website/system, and what you want to achieve." required></textarea></label>
-        <button type="submit" class="btn btn-primary">Start the conversation ↗</button>
+      <form class="form rise" style="--i:1" id="nwtContactForm" data-lead-form="contact" data-subject="New WebAura project enquiry from {business}">
+        <label>Name<input type="text" name="name" autocomplete="name" required></label>
+        <label>Email<input type="email" name="email" autocomplete="email" required></label>
+        <label>Business name<input type="text" name="business" autocomplete="organization" required></label>
+        <label>What are you trying to build or improve?<textarea name="details" required></textarea></label>
+        <button type="submit" class="btn">Start the conversation <span class="arrow" aria-hidden="true">↗</span></button>
+        <div class="form-status" role="status" aria-live="polite"></div>
       </form>
     </div>
   </div>
 </section>
 </main>
 
-<footer>
-  <div class="wrap footer-grid">
-    <div><div class="footer-brand">WebAura</div><p class="footer-desc">Digital experiences, business websites and custom systems that make business work better.</p></div>
-    <div class="footer-col"><div class="footer-heading">Explore</div><a href="#services">Capabilities</a><a href="#work">Work</a><a href="#process">Process</a><a href="#contact">Contact</a></div>
-    <div class="footer-col"><div class="footer-heading">Services</div><a href="/services/web-design">Web Design</a><a href="/services/business-websites">Business Websites</a><a href="/services/website-redesign">Redesign</a><a href="/services/digital-solutions">Digital Solutions</a></div>
-    <div class="footer-col"><div class="footer-heading">Connect</div><a href="https://wa.me/263780511822">WhatsApp</a><a href="mailto:ngaatendwew@gmail.com">Email</a><a href="#contact">Request a demo</a></div>
+<footer class="footer chapter on-blue" data-ink="blue">
+  <div class="footer-top">
+    <div class="footer-notes">
+      <span>WebAura<br>Marondera, Zimbabwe</span>
+      <span>Digital solutions that make business work better.</span>
+      <span><a href="/services/web-design">Web design</a> · <a href="/services/business-websites">Business websites</a> · <a href="/services/website-redesign">Redesign</a> · <a href="/services/digital-solutions">Digital solutions</a></span>
+    </div>
+    <a href="#top">Back to top</a>
   </div>
-  <div class="wrap footer-bottom">© 2026 WebAura. All rights reserved. · Digital solutions that make business work better.</div>
+  <a class="footer-big" href="mailto:ngaatendwew@gmail.com" data-track="contact_email"><span>ngaatendwew</span><span>@gmail.com</span></a>
+  <div class="footer-meta">
+    <span><a href="https://wa.me/263780511822">WhatsApp</a> · <a href="#contact">Request a demo</a></span>
+    <span>© 2026 WebAura</span>
+    <span>Marondera, 2026</span>
+  </div>
 </footer>
 
-<script>
-window.addEventListener('load',function(){document.body.classList.remove('is-loading')});
-</script>
 <script src="/assets/track.js" defer></script>
-<script src="/assets/experience.js" defer></script>
+<script src="/assets/home.js" defer></script>
 </body>
 </html>

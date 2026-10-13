@@ -11,3 +11,6 @@ wrangler.json
 wrangler.jsonc
 wrangler.toml
 *.log
+
+# local design-audit output, never deploy
+.taste-skill/
