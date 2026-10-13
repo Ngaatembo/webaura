@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nwt-dev-website.ngaatendwew.workers.dev/sitemap.xml
+Sitemap: https://webaura.ngaatendwew.workers.dev/sitemap.xml
